@@ -105,7 +105,7 @@ document.getElementById("car").addEventListener("click", function(event) {
 
 document.getElementById("sendWhatsApp").addEventListener("click", function() {
     let message = `Hola Doña Beatriz, quiero hacer un pedido:\n\nProductos:\n${Object.keys(selectedProducts).map(product => `${product} x${selectedProducts[product].quantity} - $${selectedProducts[product].price * selectedProducts[product].quantity}`).join("\n")}\n\nTotal: $${totalPrice}`;
-    let phoneNumber = "5538583442";
+    let phoneNumber = "4361001332";
     let whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappURL, "_blank");
