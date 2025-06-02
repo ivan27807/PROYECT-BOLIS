@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLIS EL EMPRENDEDOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesboli.css">
+</head>
+<body class="body-all">
+<div id="loader">
+    <img class="bety-wait" src="assets/img/bety-wait.png" alt="bety-wait">
+    <p class="loader-text">Espere un momento...</p>
+    <div class="spinner"></div>
+</div>
+<nav class="nav-bolis"> 
+    <ul class="nav-list">
+        <a id="menuBtn" class="nav-option2" href="#"><img class="nav-img" src="assets/img/icon-barra.png" alt="Menú"></a>
+        <a id="car" class="nav-option2" href="#">
+            <img class="nav-img" src="assets/img/carrito.png" alt="Carrito">
+            <span id="cart-count">0</span>
+        </a>
+    </ul>
+</nav>
+<div id="cart-summary">
+    <h3 class="cart-text">Tu pedido:</h3>
+    <br>
+    <ul id="cart-items"></ul>
+    <br>
+    <p ><strong class="cart-text">Total a pagar:</strong> <span id="cart-total">$0</span> Pesos</p>
+    <br>
+    <button class="cart-text" id="sendWhatsApp">Enviar Pedido por WhatsApp</button>
+</div>
+<div class="nav-menu" id="navMenu">
+    <ul class="nav-text">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#bolis-fruta">Bolis de fruta</a></li>
+        <li><a href="#bolis-cremosos">Bolis de crema</a></li>
+        <li><a href="#bolis-chile">Bolis de fruta C/chile</a></li>
+    </ul>
+</div>
+<header class="header-nav">
+    <a href="index.html"><img class="logo-bolis" src="assets/img/bolis-logo.png" alt="logo"></a>
+</header>
+<main>
+    <div class="background-instruction">
+        <img class="bety-background" src="assets/img/background.png" alt="background">
+    </div>
+    <div class="flex">
+        <h1 class="title-text">Selecciona la categoria</h1>
+        <a class="text-link" href="#bolis-fruta">
+        <article class="card-icess-1">
+            <h3 class="card-texto">Bolis de frutas</h3>
+        </article>
+        </a>
+        <a class="text-link" href="#bolis-cremosos">
+            <article class="card-icess-2">
+                <h3 class="card-texto">Bolis cremosos</h3>
+            </article>
+        </a>
+        <a class="text-link"href="#bolis-chile">
+            <article class="card-icess-3">
+                <h3 class="card-texto">Bolis frutas c/ chile</h3>
+            </article>
+        </a>
+        <h1 class="title-text">MENÚ</h1>
+        <h1 class="title-text" id="bolis-fruta">BOLIS DE FRUTA</h1>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="COCO">
+            <h3 class="card-text">COCO</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="COCO" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="COCO C/NUEZ">
+            <h3 class="card-text">COCO C/NUEZ</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="COCO C/NUEZ" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="PIÑA">
+            <h3 class="card-text">PIÑA</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="PIÑA" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="NARANJA">
+            <h3 class="card-text">NARANJA</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="NARANJA" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="JAMAICA">
+            <h3 class="card-text">JAMAICA</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="JAMAICA" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="TAMARINDO">
+            <h3 class="card-text">TAMARINDO</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="TAMARINDO" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="MANGO">
+            <h3 class="card-text">MANGO</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="MANGO" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="LIMON">
+            <h3 class="card-text">LIMON</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="LIMON" data-price="20">Seleccionar</a>
+        </article>
+        <h1 class="title-text" id="bolis-cremosos">BOLIS CREMOSOS</h1>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="FRESAS C/CREMA">
+            <h3 class="card-text">FRESAS C/CREMA</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="FRESAS C/CREMA" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="GANSITO">
+            <h3 class="card-text">GANSITO</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="GANSITO" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="CHOCORROL">
+            <h3 class="card-text">CHOCORROL</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="CHOCORROL" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="MASAPAN">
+            <h3 class="card-text">MASAPAN</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="MASAPAN" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="MAZAPAN C/NUEZ">
+            <h3 class="card-text">MASAPAN C/NUEZ</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="MASAPAN C/NUEZ" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="VAINILLA">
+            <h3 class="card-text">VAINILLA</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="VAINILLA" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="ROMPOPE">
+            <h3 class="card-text">ROMPOPE</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="ROMPOPE" data-price="20">Seleccionar</a>
+        </article>
+        <h1 class="title-text" id="bolis-chile">BOLIS DE FRUTA C/ CHILE</h1>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="TAMARINDO C/CHILE">
+            <h3 class="card-text">TAMARINDO C/CHILE</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="TAMARINDO C/CHILE" data-price="20">Seleccionar</a>
+        </article>
+        <article class="card-ices">
+            <img class="card-paleta" src="assets/img/paleta.png" alt="MANGO C/CHILE">
+            <h3 class="card-text">MANGO C/CHILE</h3>
+            <br>
+            <a class="card-buttom" href="#" data-name="MANGO C/CHILE" data-price="20">Seleccionar</a>
+        </article>
+    </div>        
+</main>
+<footer class="footer-card">
+    <h4 class="footer-text">Siguenos en nuestras redes sociales:</h4>
+    <div class="card-text">
+        <p >Proximamente...</p>
+    </div>
+</footer>
+<script src="javascript/javascript.js"></script> 
+</body>
+</html>

@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-all {
+  width: 100%;
+  background-color: rgb(227, 231, 194);
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(227, 231, 194);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.bety-wait {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.loader-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header-nav {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 245px;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav .logo-bolis {
+  width: 150px;
+}
+
+.nav-bolis {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 5px 5px 0px 0px;
+  background-color: #141d29;
+}
+.nav-bolis .nav-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bolis .nav-option {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1em;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-bolis .nav-img {
+  width: 50px;
+}
+
+.nav-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  background: #141d29;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.nav-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  width: 100%;
+  padding: 15px;
+}
+
+.nav-menu ul li a {
+  color: rgb(227, 231, 194);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-menu ul li:hover {
+  background-color: #25364b;
+}
+
+.nav-menu.active {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#car {
+  text-decoration: none;
+  color: #e2d709;
+  display: flex;
+  align-content: stretch;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+#cart-count {
+  position: absolute;
+  align-items: center;
+  background-color: rgb(4, 153, 64);
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
+
+#cart-count {
+  z-index: 1;
+}
+
+#cart-summary {
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  border-radius: 0px 0px 0px 10px;
+  color: rgb(227, 231, 194);
+  background: #141d29;
+  padding: 10px;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+#cart-summary.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#cart-items {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.cart-text {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#sendWhatsApp {
+  width: 100%;
+  background: #016833;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+#sendWhatsApp:hover {
+  background-color: #ffffff;
+  color: #016833;
+  transition: all 0.3s;
+}
+
+.background-instruction {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+}
+.background-instruction .bety-background {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.title-text {
+  box-sizing: border-box;
+  width: 95%;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #141d29;
+  padding: 5px;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.flex {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-ices {
+  box-sizing: border-box;
+  width: 160px;
+  height: 290px;
+  margin: 5px;
+  background-color: rgba(31, 142, 185, 0.8);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #000000;
+}
+.card-ices .card-paleta {
+  width: 100%;
+}
+.card-ices .card-text, .card-ices .card-buttom {
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+}
+.card-ices .card-buttom {
+  box-sizing: border-box;
+  width: 95%;
+  height: 30px;
+  font-size: 15px;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgb(255, 154, 3);
+  text-shadow: 1px 1px 5px #000000;
+  border-radius: 15px;
+  transition: all 0.4s;
+}
+.card-ices .card-buttom:hover {
+  background-color: rgb(6, 69, 133);
+}
+
+.text-link {
+  text-decoration: none;
+}
+
+.card-icess-1,
+.card-icess-2,
+.card-icess-3 {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(223, 129, 6);
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.3s ease-in-out;
+}
+.card-icess-1 .card-paletas,
+.card-icess-2 .card-paletas,
+.card-icess-3 .card-paletas {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.card-icess-1 .card-text, .card-icess-1 .card-texto,
+.card-icess-2 .card-text,
+.card-icess-2 .card-texto,
+.card-icess-3 .card-text,
+.card-icess-3 .card-texto {
+  text-decoration: none;
+  color: #dcdcdc;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000000;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.card-icess-1::before,
+.card-icess-2::before,
+.card-icess-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 76, 171, 0.337);
+  border-radius: 50%;
+}
+
+.card-icess-1 {
+  background: url(../assets/img/frutas.png) center/cover no-repeat;
+}
+
+.card-icess-2 {
+  background: url(../assets/img/frutas-cremosas.png) center/cover no-repeat;
+}
+
+.card-icess-3 {
+  background: url(../assets/img/frutas-picante.png) center/cover no-repeat;
+}
+
+.card-icess-1:hover,
+.card-icess-2:hover,
+.card-icess-3:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 1px 10px rgb(2, 41, 100);
+}
+
+.card-texto:hover {
+  color: #e2d709;
+  transition: all 0.5s ease-in-out;
+  font-size: 15px;
+}
+
+.footer-card {
+  width: 100%;
+  height: 150px;
+  background-color: #141d29;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-card .card-footer {
+  display: flexbox;
+}
+.footer-card .footer-text, .footer-card .card-text {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer-card .whatsapp {
+  width: 25px;
+  height: 25px;
+}
+.footer-card .link-whatsapp {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text-link1 {
+  width: 100%;
+}
+
+.card-1 {
+  width: 100%;
+  height: 250px;
+  background: url(../assets/img/frutas.png) center/cover no-repeat;
+  margin-bottom: 1em;
+}/*# sourceMappingURL=stylesboli.css.map */
